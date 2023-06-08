@@ -1,0 +1,11 @@
+.hidden {
+    opacity: 0;
+    position: relative;
+    top: 200px;
+    transition: all 1s;
+}
+
+.show {
+    top: 0;
+    opacity: 1;
+}

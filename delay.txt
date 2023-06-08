@@ -1,0 +1,40 @@
+// Animation loop
+let lastTime = 0;
+const rotationSpeed = 0.00005;
+let startDelayTimeout;
+
+function animate(time) {
+    const delta = time - lastTime;
+    lastTime = time;
+    onWindowResize();
+    requestAnimationFrame(animate);
+
+    if (!startDelayTimeout) {
+        sphere.rotation.y += rotationSpeed * delta;
+    }
+
+    controls.update();
+    renderer.render(scene, camera);
+}
+
+document.addEventListener('mouseup', () => {
+    clearTimeout(startDelayTimeout);
+    startDelayTimeout = setTimeout(() => {
+        startDelayTimeout = null;
+    }, 500);
+});
+
+
+background: rgba(255, 255, 255, 0.11);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.5px);
+-webkit-backdrop-filter: blur(6.5px);
+box-shadow: 0 0 15px 10px rgba(255,255,255,0.2);
+
+background: rgba(0, 0, 0, 0.48);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.9px);
+-webkit-backdrop-filter: blur(6.9px);
+box-shadow: 0 0 15px 5px rgba(0, 0, 0, 1);

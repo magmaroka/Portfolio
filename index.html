@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Verstraeten</title>
+    <style>
+        body {
+            height: 200vh;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        canvas {
+            display: block;
+            width: 100vw;
+            min-height: 100vh;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="aos.css" defer>
+</head>
+
+
+<body>
+    <div class="loader"></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top  m-2 p-0">
+        <div class="navWidth hidden show w-100" style="min-height:auto;">
+            <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <h2 class="m-0"><i class="bi bi-list text-white"></i></h2>
+            </button>
+            <div class="mainNav collapse navbar-collapse text-center gap-3" id="navbarNav">
+                <a data-bs-toggle="collapse" data-bs-target="#navbarNav" onclick="window.location.href='#'">Home</a>
+                <a href="#aboutMe">Over mij</a>
+                <a href="#project">Projecten</a>
+                <a href="#education">Opleiding</a>
+            </div>
+        </div>
+    </nav>
+    <div class="overlay">
+        <div id="tempfix">
+            <header class="header ">
+                <h1>Noah Verstraeten</h1>
+                <h2>Security specialist</h2>
+            </header>
+        </div>
+        <div class="interaction">
+            <nav class="links">
+                <a href="https://www.linkedin.com/in/noah-verstraeten-a0a0a0a0/" target="_blank">LinkedIn</a>
+                <span>|</span>
+                <a href="https://github.com/NoahVerstraeten" target="_blank">GitHub</a>
+                <span>|</span>
+                <a href="https://www.instagram.com/noahverstraeten/" target="_blank">Instagram</a>
+                <span>|</span>
+                <a href="https://www.youtube.com/channel/UC___9-X___9-X___9-X__g" target="_blank">YouTube</a>
+            </nav>
+            <div id="aboutMe" class="sectionHeight container p-0 ">
+                <section class="hidden" style="margin-top:100px">
+                    <div class="w-100 row">
+                        <div class="col-lg-6 order-lg-5 mb-5 pt-5 d-flex justify-content-center align-items-center "><img src="images/webp/pfp.webp" width="75%"></div>
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <div>
+                                <h2>Wie ben ik?</h2>
+                                <hr>
+                                <p>
+                                    Ik ben Noah, een student van Toegepaste Informatica aan de AP Hogeschool Antwerpen. Met een achtergrond in multimedia en webdesign heb ik een passie ontwikkeld voor online beveiliging en creatieve
+                                    probleemoplossing. Mijn focus ligt op netwerkbeveiliging, gegevensprivacy en kwetsbaarheidsbeoordeling. Mijn doel is om innovatieve oplossingen te ontwikkelen die digitale assets beveiligen, terwijl ik
+                                    voortdurend mijn kennis vergroot om op de hoogte te blijven van de nieuwste trends.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row hidden pt-5">
+                        <div class="col-lg-6 order-lg-5">
+                            <h2>Vaardigheden</h2>
+                            <hr>
+                            <p>
+                                Ik ben een ervaren met uitgebreide vaardigheden in PHP, JavaScript, Photoshop, Adobe Premiere Pro, Illustrator en After Effects. Met PHP en JavaScript kan ik dynamische websites en interactieve
+                                gebruikerservaringen creëren die voldoen aan de behoeften van mijn klanten. Mijn expertise in Photoshop stelt me in staat om afbeeldingen op professioneel niveau te bewerken, terwijl ik met Illustrator
+                                hoogwaardige grafische illustraties kan maken. Met Adobe Premiere Pro kan ik videobewerking uitvoeren en met After Effects kan ik indrukwekkende visuele effecten en animaties creëren.
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row"><img src="images/webp/vaardig.webp" class="col-md-6 pb-5" alt="Vaardigheden"></div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            <div id="project" class="sectionHeight container p-0 pb-5 ">
+                <section class="hidden w-100" style="margin-top:100px">
+                    <h2 class="text-center w-100 fs-1">Projecten</h2>
+                    <hr>
+                    <div class="row hidden ">
+                        <div class="col-lg-4 mb-4">
+                            <img src="images/webp/aquabattle.webp" class="rounded" width="100%">
+                        </div>
+                        <div class="col-lg-8 d-flex align-items-center  text-lg-start text-start">
+                            <div class="mb-5">
+                                <h3>Aqua Battle</h3>
+                                <p class="mb-4">Aqua Battle is het eindopdracht van mijn middelbaar waar je een attractie moest ontwerpen met het programma blender en adverteren doormiddel van een site en posters.</p>
+                                <a class="buttonBg" href="http://verstraeten.slc-mul.online/">Visit me</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row hidden ">
+                        <div class="col-lg-4 order-lg-last  mb-4">
+                            <img src="images/webp/KunstkART.webp" class="rounded" width="100%">
+                        </div>
+                        <div class="col-lg-8 d-flex align-items-center  text-lg-end text-start">
+                            <div class="mb-5">
+                                <h3>KunstkArts</h3>
+                                <p class="mb-4">een voor opdracht voor het eindopdracht zodat men een site kon maken waar je iets zou kunnen verkopen. het werd ook gebruikt om geld in te zamelen voor de
+                                    eindejaarsries.</p>
+                                <a class="buttonBg" href="http://verstraeten.slc-mul.online/kunstkarts/">Visit me</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="education" class="sectionHeight container p-0">
+                <section class="hidden w-100" style="margin-top:100px">
+                    <div class="hidden">
+                        <h2 class="text-center w-100 fs-1">Opleiding</h2>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mt-5 hidden">
+                            <h3 class="w-100 d-flex justify-content-center" style="min-height:100px">Toegepaste Informatica, <br> Cyber Security and Cloud</h3>
+                            <hr>
+                            <div class="ps-4 pe-4">
+                                <p>
+                                    In het IT & Cyber Security and Cloud-traject leer je system- en netwerkinfrastructuur en bijbehorende beveiligingsmaatregelen. Als medewerker zorg je ervoor dat bedrijven beter beschermd zijn tegen
+                                    datalekken en de privacy van gebruikers wordt gewaarborgd.
+                                </p>
+                                <p>2023 - 2026</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-5 hidden">
+                            <div style="min-height:100px">
+                                <br>
+                                <h3 class="w-100 d-flex justify-content-center ">Multimedia Kunstkaai, Antwerpen</h3>
+                            </div>
+                            <hr>
+                            <div class="ps-4 pe-4">
+                                <p>
+                                    Ik ben een student in het 6e jaar Multimedia, waar ik me bezighoud met fotobewerking, videobewerking, webdesign en -beheer, grafisch ontwerp en 2D/3D-animatie. Mijn eindproject was een geïntegreerde
+                                    website die alle aspecten van mijn grafische vaardigheden omvat.
+                                </p>
+                                <p>2019-2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="contactForm" class="sectionHeight container p-0">
+                <section class="hidden w-100" style="margin-top:100px">
+                    <h2>Contact Me</h2>
+                    <hr>
+                    <form action="">
+                        <label>Email:</label>
+                        <br>
+                        <input class="form-control" style="background-color:rgba(255,255,255,0.5)" type="email" name="" id="" placeholder="Email">
+                        <br>
+                        <br>
+                        <label>Content:</label>
+                        <br>
+                        <textarea class="form-control" style="background-color:rgba(255,255,255,0.5)" name="" id="" cols="30" rows="10" placeholder="Add a comment..."></textarea>
+                        <br>
+                        <button class="form-control " style="background-color:rgba(255,255,255,0.5)" class="buttonBg text-light">Verstuur</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div id="threeContainer"></div>
+
+    <script src="aos.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="loader.js"></script>
+</body>
+
+
+</html>
